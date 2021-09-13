@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://docs.ipi.wiki/</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial6-HowToInstallRaspberryPiCameraModule</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial7-HowToUseWiFiBTUSBDongle</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial8-howToEnableSerialCommunication</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial10-HowToEnablePM2.5Sensorspm2.5_sensor</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial2-HowToFlashYoctoImage</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial3-HowToBuildDebian10LTS</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial5-HowToFlashDebianImage</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial4-HowToBuildUbuntu</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial1-HowToBuildYoctoBSP</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/YoctoImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/UserInterfaces</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/CanderaCGIStudioDemo</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/UbuntuImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/ModuleIntroduction</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/MechanicalandThermal</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/SMARCModuleOverview</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/PinoutSummary</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/PX30BootFlow</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/SemaPX30Features</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/U-boot</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/SupportedOSList</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToFlashImage</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToSetup</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToInstallMRAAUPM</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildYocto</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUboot</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildDebian</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/DebianImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/ExampleHowto</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/CarrierIntroduction</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/CANDERACGIStudio</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/CanderaCGIStudioPage</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/BlockDiagram</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-px30/AndroidImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/eIQMLsoftwareDemo</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/Introduction</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/YoctoImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/CanderaCGIStudioDemo</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/BootToQtDemo</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/CarrierModuleandeIQMachinelearningsoftware</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/examples&howto/FlashingUbuntuDebianImageintoMicroSD</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/UserInterfaces</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/UnBoxing</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/UbuntuImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/ModuleIntroduction</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/SoftwarePartners</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToFlashImageeMMC</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToSetup</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToBuildYocto</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToFlashImageSD</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/ExampleHowto</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToBuildDebian</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/HowToBuildUbuntu</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/DebianImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/CarrierIntroduction</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/CanderaCGIStudioPage</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/AIInferencingOnNPU</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ipi-smarc-imx8mp/AndroidImages</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/404</loc>
+    
+    <lastmod>2021-09-13</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://docs.ipi.wiki/</loc>
+    <lastmod>2021-09-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
+  
+</urlset>
