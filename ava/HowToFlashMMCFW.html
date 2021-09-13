@@ -9,13 +9,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/index.html">
+  <link rel="canonical" href="http://example.com/ava/HowToFlashMMCFW.html">
   <!-- Alternative links -->
   
     
-      <link rel="alternative" hreflang="en" href="http://example.com/index.html">
+      <link rel="alternative" hreflang="en" href="http://example.com/ava/HowToFlashMMCFW.html">
     
-      <link rel="alternative" hreflang="zh-cn" href="http://example.com/zh-cn/index.html">
+      <link rel="alternative" hreflang="zh-cn" href="http://example.com/zh-cn/ava/HowToFlashMMCFW.html">
     
   
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -66,17 +66,21 @@
   <!-- RSS -->
   <link rel="alternate" href="/come/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="Khadas Documentation">
+  <meta name="description" content="How to Flash MMC Firmware Using Out-of-Band Management (OOBM)MMC chip is located on COM-HPC-ALT COMe module which supports the power sequence control and hardware monitoring features (like CPU tempera">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ADLINK Industrial Pi Wiki">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/ava/HowToFlashMMCFW.html">
 <meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
-<meta property="og:description" content="Khadas Documentation">
+<meta property="og:description" content="How to Flash MMC Firmware Using Out-of-Band Management (OOBM)MMC chip is located on COM-HPC-ALT COMe module which supports the power sequence control and hardware monitoring features (like CPU tempera">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-13T09:41:46.059Z">
-<meta property="article:modified_time" content="2021-09-13T09:41:46.059Z">
+<meta property="og:image" content="http://example.com/ava/HowToFlashMMCFW.assets/connection.png">
+<meta property="og:image" content="http://example.com/ava/HowToFlashMMCFW.assets/image-20210827171017237.png">
+<meta property="og:image" content="http://example.com/ava/HowToFlashMMCFW.assets/result.png">
+<meta property="article:published_time" content="2021-09-13T06:51:03.961Z">
+<meta property="article:modified_time" content="2021-09-08T08:54:01.680Z">
 <meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/ava/HowToFlashMMCFW.assets/connection.png">
   <!-- Google Analytics -->
   
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -92,7 +96,7 @@
       <a class="navbar-brand" href="https://www.ipi.wiki/" rel="external nofollow noreferrer" target="_self">
       <img src="https://xfii.b-cdn.net/uploads/i-pi-smarc/5ieu2go.jpg" class="img-fluid" style="height:27px;top: 8px;position: relative;/* display: inline-block; */" alt="">  </a>
       <a href="https://www.ipi.wiki/" rel="external nofollow noreferrer" class="main-nav-link" target="_self"> Home</a>
-      <div style="display:inline-block"><div class="btn-group"><a href="/come/ava/" class="main-nav-link  header">menu.ava</a></div>
+      <div style="display:inline-block"><div class="btn-group"><a href="/come/ava/" class="main-nav-link current header">menu.ava</a></div>
       <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/adlink" class="main-nav-link"><i class="fa fa-github-alt"></i> GitHub</a>
       <a href="https://www.ipi.wiki/community/forum" rel="external nofollow noreferrer" class="main-nav-link" target="_self"> Community </a>    
     </nav>
@@ -108,255 +112,98 @@
   </div>
 </header>
 
-    <style>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h3 id="How-to-Flash-MMC-Firmware-Using-Out-of-Band-Management-OOBM" class="article-heading"><a href="#How-to-Flash-MMC-Firmware-Using-Out-of-Band-Management-OOBM" class="headerlink" title="How to Flash MMC Firmware Using Out-of-Band Management (OOBM)"></a>How to Flash MMC Firmware Using Out-of-Band Management (OOBM)<a class="article-anchor" href="#How-to-Flash-MMC-Firmware-Using-Out-of-Band-Management-OOBM" aria-hidden="true"></a></h3><p>MMC chip is located on COM-HPC-ALT COMe module which supports the power sequence control and hardware monitoring features (like CPU temperature, voltage readings,…). The procedure describes how to flash MMC firmware by using IPMI command.</p>
+<p>Before start, please prepare the Ethernet cable and connect to your host machine and SCDP system like this:</p>
+<p><img src="HowToFlashMMCFW.assets/connection.png" alt="connection"></p>
+<p><strong>In your host Machine with Linux Environment:</strong> </p>
+<ul>
+<li><p>Configure the static IP Address on the network device and save it:</p>
+<ul>
+<li><p>IP address: <strong>192.168.0.22</strong></p>
+</li>
+<li><p>Netmask: <strong>255.255.255.0</strong></p>
+</li>
+<li><p>Gateway: <strong>192.168.0.200</strong></p>
+<br></li>
+</ul>
+</li>
+</ul>
+<p> <strong>In your host Machine with Windows Environment:</strong> </p>
+<ul>
+<li>Configure the static IP Address on the network device and save it:</li>
+</ul>
+<p><img src="HowToFlashMMCFW.assets/image-20210827171017237.png" alt="image-20210827171017237"></p>
+<br>
 
-.just-center {
-    text-align: center;
-}
+<ul>
+<li><p>the IP address of OOBM on SCDP system is <strong>192.168.0.100</strong></p>
+</li>
+<li><p>type the Ping command to see if the connection is alive</p>
+<blockquote>
+<p>sushi@Sushi:~$ ping 192.168.0.100<br>PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.<br>64 bytes from 192.168.0.100: icmp_seq=1 ttl=64 time=0.569 ms<br>64 bytes from 192.168.0.100: icmp_seq=2 ttl=64 time=0.572 ms<br>64 bytes from 192.168.0.100: icmp_seq=3 ttl=64 time=0.560 ms</p>
+</blockquote>
+</li>
+<li><p>type command to see the MMC version: </p>
+<p><code>ipmitool -I lanplus -H 192.168.0.100 -U admin -P admin -b 0 -t 0x82 mc info</code></p>
+<p> There are 3 bytes that combines the version on <strong>Aux Firmware Rev Info</strong>:</p>
+<ul>
+<li>0xa1  ( please ignore this byte)</li>
+<li>0x08 </li>
+<li>0x10</li>
+<li>0x02<img src="HowToFlashMMCFW.assets/result.png" alt="result"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li> Type command to upgrade the firmware: </li>
+</ul>
+<p>  <code>ipmitool -I lanplus -H 192.168.0.100 -U admin -P admin -b 0 -t 0x82 hpm upgrade hpm1all_081002.img activate force</code></p>
+<p>​           Note:</p>
+<p>​                 - hpm1all_081002.img is the firmware file you woud like to flash</p>
+<p>​                 - click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/$web/public/COMe/Ampere/SCDP/MMC_FW/hpm1all_081002.img">here</a> to download the latest MMC FW image (081002 version)</p>
+<p>​<br><strong>Once upgrade successfully, please to check the “Aux firmware Rec info” is the latest one.</strong></p>
+<p>​    </p>
 
-.column-center {
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.clear {
-    clear: both;
-}
-
-.board-series {
-    position: relative;
-    float: left;
-    margin: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.homepage {
-    position: relative;
-    float: left;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.col-box {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.homepage img {
-    height: auto;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-}
-
-.mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(101, 101, 101, 0.6);
-    color: #ffffff;
-    opacity: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-
-.mask font {
-    text-align: center;
-}
-
-.homepage a:hover .mask {
-    opacity: 1;
-}
-
-.series-font {
-    text-align: left;
-    font-size: 2.0em;
-    font-weight: 300;
-}
-
-.mask-text {
-    font-size: 2.4em;
-}
-
-</style>
-
-<header id="banner" class="wrapper">
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2021-09-08T08:54:01.680Z" itemprop="dateModified">Last updated: 2021-09-08</time>
+                <a href="index.html" class="article-footer-next" title="Un-Boxing"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <div class="article-toc-border">
+                <strong class="sidebar-title">Contents</strong>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-Flash-MMC-Firmware-Using-Out-of-Band-Management-OOBM"><span class="toc-text">How to Flash MMC Firmware Using Out-of-Band Management (OOBM)</span></a></li></ol>
+                <a href="#" id="article-toc-top">Back to Top</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
   <div class="inner">
-    <div id="banner-special-content">Amazing Khadas, always amazes you!</div>
-    <h2 id="banner-title"></h2>
+    <strong class="sidebar-title"><details><summary>Getting Started</summary><a href="index.html" class="sidebar-link first">Un-Boxing</a><a href="PowerCableConnection.html" class="sidebar-link">User interfaces</a><a href="HowToChangeBMCIPaddress.html" class="sidebar-link">How to setup</a></details></strong><strong class="sidebar-title"><details><summary>Hardware Documentation</summary><a href="HowToChangeBMCIPaddress.html" class="sidebar-link first">Module Introduction</a><a href="HowToFlashEDK2FW.html" class="sidebar-link">Carrier Introduction</a></details></strong>
   </div>
-</header>
-<div id="content-wrap">
-  <div class="wrapper">
-    <div class="inner">
-      
-
-      <div class="ui just-center container" id="intro-block">
-        <!-- VIM -->
-        <div class="column-center">
-          <div class="ui board-series" style="margin-top:32px;">
-            
-              <span class="series-font">VIM Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim1.jpg" alt="VIM1">
-              
-              <a href="/linux/vim1">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM1</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim2.jpg" alt="VIM2">
-              
-              <a href="/linux/vim2">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM2</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim3.jpg" alt="VIM3">
-              
-              <a href="/linux/vim3#VIM3">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM3</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim3l.jpg" alt="VIM3L">
-              
-              <a href="/linux/vim3#VIM3L">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM3L</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <!-- Edge -->
-        <div class="column-center">
-          <div class="ui board-series" style="margin:16px;">
-            
-              <span class="series-font">Edge Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/edge.jpg" alt="Edge">
-              
-              <a href="/linux/edge#Edge">
-                
-                  <div class="mask">
-                    <span class="mask-text">Edge</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/edge-v.jpg" alt="Edge-V">
-              
-              <a href="/linux/edge#Edge-V">
-                
-                  <div class="mask">
-                    <span class="mask-text">Edge-V</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/captain.jpg" alt="Captain">
-              
-              <a href="/linux/edge#Captain">
-                
-                  <div class="mask">
-                    <span class="mask-text">Captain</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <!-- TONE -->
-        <div class="column-center">
-          <div class="ui board-series">
-            
-              <span class="series-font">Tone Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row" style="display:block;">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment">
-              <img src="/linux/images/home/tone1.jpg" alt="TONE1">
-              
-              <a href="/linux/tone1">
-                
-                  <div class="mask">
-                    <span class="mask-text">Tone 1</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="clear"></div>
-
-      </div>
+</aside>
     </div>
   </div>
 </div>
+
     <footer id="footer" class="wrapperforfooter">
   <div class="inner">
     <div class="grid grid--no-gutters small--text-center grid--footer-float-right">
@@ -392,9 +239,11 @@ img {
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <a href="/come/ava/" class="mobile-nav-link  header">menu.ava</a>
+      <a href="/come/ava/" class="mobile-nav-link current header">menu.ava</a>
       <a href="https://github.com/adlink" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
     </ul>
+    
+      <strong class="mobile-nav-title"><details><summary>Getting Started</summary><a href="index.html" class="mobile-nav-link first">Un-Boxing</a><a href="PowerCableConnection.html" class="mobile-nav-link">User interfaces</a><a href="HowToChangeBMCIPaddress.html" class="mobile-nav-link">How to setup</a></details></strong><strong class="mobile-nav-title"><details><summary>Hardware Documentation</summary><a href="HowToChangeBMCIPaddress.html" class="mobile-nav-link first">Module Introduction</a><a href="HowToFlashEDK2FW.html" class="mobile-nav-link">Carrier Introduction</a></details></strong>
     
   </div>
   

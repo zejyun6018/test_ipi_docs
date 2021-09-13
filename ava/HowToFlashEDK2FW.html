@@ -9,13 +9,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/index.html">
+  <link rel="canonical" href="http://example.com/ava/HowToFlashEDK2FW.html">
   <!-- Alternative links -->
   
     
-      <link rel="alternative" hreflang="en" href="http://example.com/index.html">
+      <link rel="alternative" hreflang="en" href="http://example.com/ava/HowToFlashEDK2FW.html">
     
-      <link rel="alternative" hreflang="zh-cn" href="http://example.com/zh-cn/index.html">
+      <link rel="alternative" hreflang="zh-cn" href="http://example.com/zh-cn/ava/HowToFlashEDK2FW.html">
     
   
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -66,17 +66,24 @@
   <!-- RSS -->
   <link rel="alternate" href="/come/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="Khadas Documentation">
+  <meta name="description" content="How to update the edk2 firmware  The below  procedure describes how to flash and updated the edk2 firmware using a UEFI Shell on COM HPC ALT  system 1. Click here to download a zip files that includes">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ADLINK Industrial Pi Wiki">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/ava/HowToFlashEDK2FW.html">
 <meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
-<meta property="og:description" content="Khadas Documentation">
+<meta property="og:description" content="How to update the edk2 firmware  The below  procedure describes how to flash and updated the edk2 firmware using a UEFI Shell on COM HPC ALT  system 1. Click here to download a zip files that includes">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-13T09:41:46.059Z">
-<meta property="article:modified_time" content="2021-09-13T09:41:46.059Z">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/esc-mac.png">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/image-20210820144057452.png">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/image-20210820144506009.png">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/image-20210820144625909.png">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/image-20210820144916900.png">
+<meta property="og:image" content="http://example.com/ava/edk2-firmware-updating.assets/image-20210820145403960.png">
+<meta property="article:published_time" content="2021-09-13T06:55:36.325Z">
+<meta property="article:modified_time" content="2021-09-08T08:54:01.738Z">
 <meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/ava/edk2-firmware-updating.assets/esc-mac.png">
   <!-- Google Analytics -->
   
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -92,7 +99,7 @@
       <a class="navbar-brand" href="https://www.ipi.wiki/" rel="external nofollow noreferrer" target="_self">
       <img src="https://xfii.b-cdn.net/uploads/i-pi-smarc/5ieu2go.jpg" class="img-fluid" style="height:27px;top: 8px;position: relative;/* display: inline-block; */" alt="">  </a>
       <a href="https://www.ipi.wiki/" rel="external nofollow noreferrer" class="main-nav-link" target="_self"> Home</a>
-      <div style="display:inline-block"><div class="btn-group"><a href="/come/ava/" class="main-nav-link  header">menu.ava</a></div>
+      <div style="display:inline-block"><div class="btn-group"><a href="/come/ava/" class="main-nav-link current header">menu.ava</a></div>
       <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/adlink" class="main-nav-link"><i class="fa fa-github-alt"></i> GitHub</a>
       <a href="https://www.ipi.wiki/community/forum" rel="external nofollow noreferrer" class="main-nav-link" target="_self"> Community </a>    
     </nav>
@@ -108,255 +115,75 @@
   </div>
 </header>
 
-    <style>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="How-to-update-the-edk2-firmware" class="article-heading"><a href="#How-to-update-the-edk2-firmware" class="headerlink" title="How to update the edk2 firmware"></a>How to update the edk2 firmware<a class="article-anchor" href="#How-to-update-the-edk2-firmware" aria-hidden="true"></a></h1><br>
 
-.just-center {
-    text-align: center;
-}
+<p>The below  procedure describes how to flash and updated the edk2 firmware using a UEFI Shell on COM HPC ALT  system</p>
+<p><br>1. Click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/$web/public/COMe/Ampere/SCDP/EDK2-Binary/EDK2-FWU-20210811.zip">here</a> to download a zip files that includes the firmware update and a flashing tool. </p>
+<p><br>2. Unzip the file and copy the files to the root directory of an empty USB drive with standard FAT32 format</p>
+<p>   <strong>Warning</strong>: Data loss may result if written to the wrong device or in the worst case you kill your hosts OS.</p>
+<p><br>3. Insert the USB drive to SCDP system and power on the system up.</p>
+<p><br>4. On average it takes around 35 to 40 seconds after power on for the below screen to appear,<br>   <br>when it appears Press <img src="edk2-firmware-updating.assets/esc-mac.png" alt="Esc icon in iOS Style" style="zoom: 40%;">key several times to enter the edk2 setup menu</p>
+ <img src="edk2-firmware-updating.assets/image-20210820144057452.png" alt="image-20210820144057452">
 
-.column-center {
-    margin: 0 auto;
-    display: inline-block;
-}
+<p><br>4. After entering the menu will appear as the below<br></p>
+ <img src="edk2-firmware-updating.assets/image-20210820144506009.png" alt="image-20210820144506009">
 
-.clear {
-    clear: both;
-}
+<p><br>5. Go to the sub-menu of <strong>[Boot Manager]</strong> and Select to boot from <strong>[UEFl Shell]</strong></p>
+ <img src="edk2-firmware-updating.assets/image-20210820144625909.png" alt="image-20210820144625909">
 
-.board-series {
-    position: relative;
-    float: left;
-    margin: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
+<p><br>6. The USB drive  will appear with device name: <strong>FS0</strong> on the block device map </p>
+ <img src="edk2-firmware-updating.assets/image-20210820144916900.png" alt="image-20210820144916900">
 
-.homepage {
-    position: relative;
-    float: left;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
+<p><br>7. Change to FS0, list the contents and execute the update  </p>
+<blockquote>
+<p>Shell&gt; FS0:   </p>
+<p>FS0:\&gt; ls</p>
+<p>FS0:\&gt; fwu.nsh</p>
+</blockquote>
+ <img src="edk2-firmware-updating.assets/image-20210820145403960.png" alt="image-20210820145403960">
 
-.col-box {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+<p><br>8. After the flash process has concluded (100%) power down and reboot the system</p>
 
-.homepage img {
-    height: auto;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-}
-
-.mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(101, 101, 101, 0.6);
-    color: #ffffff;
-    opacity: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-
-.mask font {
-    text-align: center;
-}
-
-.homepage a:hover .mask {
-    opacity: 1;
-}
-
-.series-font {
-    text-align: left;
-    font-size: 2.0em;
-    font-weight: 300;
-}
-
-.mask-text {
-    font-size: 2.4em;
-}
-
-</style>
-
-<header id="banner" class="wrapper">
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2021-09-08T08:54:01.738Z" itemprop="dateModified">Last updated: 2021-09-08</time>
+                <a href="HowToChangeBMCIPaddress.html" class="article-footer-prev" title="Module Introduction"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <div class="article-toc-border">
+                <strong class="sidebar-title">Contents</strong>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-update-the-edk2-firmware"><span class="toc-text">How to update the edk2 firmware</span></a></li></ol>
+                <a href="#" id="article-toc-top">Back to Top</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
   <div class="inner">
-    <div id="banner-special-content">Amazing Khadas, always amazes you!</div>
-    <h2 id="banner-title"></h2>
+    <strong class="sidebar-title"><details><summary>Getting Started</summary><a href="index.html" class="sidebar-link first">Un-Boxing</a><a href="PowerCableConnection.html" class="sidebar-link">User interfaces</a><a href="HowToChangeBMCIPaddress.html" class="sidebar-link">How to setup</a></details></strong><strong class="sidebar-title"><details open><summary>Hardware Documentation</summary><a href="HowToChangeBMCIPaddress.html" class="sidebar-link first">Module Introduction</a><a href="HowToFlashEDK2FW.html" class="sidebar-link current">Carrier Introduction</a></details></strong>
   </div>
-</header>
-<div id="content-wrap">
-  <div class="wrapper">
-    <div class="inner">
-      
-
-      <div class="ui just-center container" id="intro-block">
-        <!-- VIM -->
-        <div class="column-center">
-          <div class="ui board-series" style="margin-top:32px;">
-            
-              <span class="series-font">VIM Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim1.jpg" alt="VIM1">
-              
-              <a href="/linux/vim1">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM1</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim2.jpg" alt="VIM2">
-              
-              <a href="/linux/vim2">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM2</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim3.jpg" alt="VIM3">
-              
-              <a href="/linux/vim3#VIM3">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM3</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/vim3l.jpg" alt="VIM3L">
-              
-              <a href="/linux/vim3#VIM3L">
-                
-                  <div class="mask">
-                    <span class="mask-text">VIM3L</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <!-- Edge -->
-        <div class="column-center">
-          <div class="ui board-series" style="margin:16px;">
-            
-              <span class="series-font">Edge Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/edge.jpg" alt="Edge">
-              
-              <a href="/linux/edge#Edge">
-                
-                  <div class="mask">
-                    <span class="mask-text">Edge</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/edge-v.jpg" alt="Edge-V">
-              
-              <a href="/linux/edge#Edge-V">
-                
-                  <div class="mask">
-                    <span class="mask-text">Edge-V</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment col-box">
-              <img src="/linux/images/home/captain.jpg" alt="Captain">
-              
-              <a href="/linux/edge#Captain">
-                
-                  <div class="mask">
-                    <span class="mask-text">Captain</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <!-- TONE -->
-        <div class="column-center">
-          <div class="ui board-series">
-            
-              <span class="series-font">Tone Series</span>
-            
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row" style="display:block;">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment">
-              <img src="/linux/images/home/tone1.jpg" alt="TONE1">
-              
-              <a href="/linux/tone1">
-                
-                  <div class="mask">
-                    <span class="mask-text">Tone 1</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="clear"></div>
-
-      </div>
+</aside>
     </div>
   </div>
 </div>
+
     <footer id="footer" class="wrapperforfooter">
   <div class="inner">
     <div class="grid grid--no-gutters small--text-center grid--footer-float-right">
@@ -392,9 +219,11 @@ img {
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <a href="/come/ava/" class="mobile-nav-link  header">menu.ava</a>
+      <a href="/come/ava/" class="mobile-nav-link current header">menu.ava</a>
       <a href="https://github.com/adlink" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
     </ul>
+    
+      <strong class="mobile-nav-title"><details><summary>Getting Started</summary><a href="index.html" class="mobile-nav-link first">Un-Boxing</a><a href="PowerCableConnection.html" class="mobile-nav-link">User interfaces</a><a href="HowToChangeBMCIPaddress.html" class="mobile-nav-link">How to setup</a></details></strong><strong class="mobile-nav-title"><details open><summary>Hardware Documentation</summary><a href="HowToChangeBMCIPaddress.html" class="mobile-nav-link first">Module Introduction</a><a href="HowToFlashEDK2FW.html" class="mobile-nav-link current">Carrier Introduction</a></details></strong>
     
   </div>
   
