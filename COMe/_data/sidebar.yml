@@ -1,0 +1,10 @@
+ava:
+  Getting Started:
+    Un-Boxing: index.html
+    User interfaces: PowerCableConnection.html
+    How to setup: HowToChangeBMCIPaddress.html
+  Hardware Documentation:
+    Module Introduction: HowToChangeBMCIPaddress.html
+    Carrier Introduction: HowToFlashEDK2FW.html
+
+

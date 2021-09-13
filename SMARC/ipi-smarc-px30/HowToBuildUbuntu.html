@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="icon" href="https://xfii.b-cdn.net/uploads/i-pi-smarc/5ieu2go.jpg">
-  <title>Khadas Documentation</title>
+  <title>ADLINK Industrial Pi Wiki</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
   <link rel="canonical" href="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.html">
   <!-- Alternative links -->
   
-    
-      <link rel="alternative" hreflang="en" href="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.html">
-    
-      <link rel="alternative" hreflang="zh-cn" href="https://docs.ipi.wiki/zh-cn/ipi-smarc-px30/HowToBuildUbuntu.html">
     
   
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -64,13 +60,13 @@
   <link rel="stylesheet" href="/SMARC//css/font/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
-  <link rel="alternate" href="/SMARC/atom.xml" title="Khadas Documentation" type="application/atom+xml">
+  <link rel="alternate" href="/SMARC/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
   <!-- Open Graph -->
   <meta name="description" content="How to Build UbuntuThe procedure to describes how to create Ubuntu image with SD Card on LEC-PX30 with Industrial Pi-SMARC. The version of Ubuntu used is 18.04.3 LTS.  Recommended HardwareTo setup t">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Khadas Documentation">
-<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu">
-<meta property="og:site_name" content="Khadas Documentation">
+<meta property="og:title" content="ADLINK Industrial Pi Wiki">
+<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.html">
+<meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
 <meta property="og:description" content="How to Build UbuntuThe procedure to describes how to create Ubuntu image with SD Card on LEC-PX30 with Industrial Pi-SMARC. The version of Ubuntu used is 18.04.3 LTS.  Recommended HardwareTo setup t">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.assets/image-20200309102707320.png">
@@ -85,10 +81,9 @@
 <meta property="og:image" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.assets/lsblk_output-1583903709858.png">
 <meta property="article:published_time" content="2021-09-13T07:34:39.298Z">
 <meta property="article:modified_time" content="2021-09-13T07:34:39.298Z">
-<meta property="article:author" content="Khadas">
+<meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUbuntu.assets/image-20200309102707320.png">
-<meta name="twitter:site" content="khadas_official">
   <!-- Google Analytics -->
   
 <script>
@@ -97,7 +92,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-110196417-1', 'auto');
+  ga('create', 'UA-161199547-2', 'auto');
   ga('send', 'pageview');
 </script>
 
@@ -154,13 +149,13 @@
 <li>OS: Ubuntu 16.04 LTS/Ubuntu 18.04 LTS</li>
 </ul>
 <p>Update apt repositories list on your host machine.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br></pre></td></tr></table></figure>
 
 <p>Install kernel and u-boot dependencies.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib</span> </span><br><span class="line">libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11 dev lib32z1-dev ccache libgl1-mesa-dev libxml2-utils xsltproc </span><br><span class="line">unzip device-tree-compiler liblz4-tool</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib</span> </span><br><span class="line">libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11 dev lib32z1-dev ccache libgl1-mesa-dev libxml2-utils xsltproc </span><br><span class="line">unzip device-tree-compiler liblz4-tool</span><br></pre></td></tr></table></figure>
 
 <p>Install buildroot dependencies.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install libfile-which-perl sed make binutils gcc g++ bash patch gzip bzip2 perl tar cpio python unzip</span><br><span class="line">rsync file bc libmpc3 git repo texinfo pkg-config cmake tree texinfo</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install libfile-which-perl sed make binutils gcc g++ bash patch gzip bzip2 perl tar cpio python unzip</span><br><span class="line">rsync file bc libmpc3 git repo texinfo pkg-config cmake tree texinfo</span><br></pre></td></tr></table></figure>
 
 
 
@@ -177,73 +172,73 @@
 </ul>
 <h2 id="Step-1-Preparing-Ubuntu-Root-File-System" class="article-heading"><a href="#Step-1-Preparing-Ubuntu-Root-File-System" class="headerlink" title="Step 1: Preparing Ubuntu Root File System"></a>Step 1: Preparing Ubuntu Root File System<a class="article-anchor" href="#Step-1-Preparing-Ubuntu-Root-File-System" aria-hidden="true"></a></h2><ol>
 <li><p>Install QEMU on the development host PC with Ubuntu OS</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install qemu-user-static</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install qemu-user-static</span><br></pre></td></tr></table></figure></li>
 <li><p>Download go to <a target="_blank" rel="noopener external nofollow noreferrer" href="http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/">http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/</a>  and choose this one: <code>ubuntu-base-18.04.2-base-arm64.tar.gz</code></p>
 </li>
 <li><p>Create a temporary folder and extract downloaded tarball into the folder.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir $HOME/temp</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir $HOME/temp</span><br></pre></td></tr></table></figure></li>
 <li><p>Extract the file to temp folder</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo tar -xpf ubuntu-base-18.04.2-base-arm64.tar.gz -C $HOME/temp</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo tar -xpf ubuntu-base-18.04.2-base-arm64.tar.gz -C $HOME/temp</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="Configure-the-rootfs" class="article-heading"><a href="#Configure-the-rootfs" class="headerlink" title="Configure the rootfs"></a>Configure the rootfs<a class="article-anchor" href="#Configure-the-rootfs" aria-hidden="true"></a></h3><ol>
 <li><p>Get your network ready:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp -b /etc/resolv.conf $HOME/temp/etc/resolv.conf</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp -b /etc/resolv.conf $HOME/temp/etc/resolv.conf</span><br></pre></td></tr></table></figure></li>
 <li><p>Prepare QEMU:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp /usr/bin/qemu-aarch64-static $HOME/temp/usr/bin/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp /usr/bin/qemu-aarch64-static $HOME/temp/usr/bin/</span><br></pre></td></tr></table></figure></li>
 <li><p>Change root:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chroot $HOME/temp</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo chroot $HOME/temp</span><br></pre></td></tr></table></figure></li>
 <li><p>Update and upgrade:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ apt update</span><br><span class="line">$ apt upgrade</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ apt update</span><br><span class="line">$ apt upgrade</span><br></pre></td></tr></table></figure></li>
 <li><p>Install the required tools or utilities.  While installing the tools/utilities, you will be prompted through GUI menu to make certain selections such as those for date/time/region. Please make the appropriate selections and proceed.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt install vim git sudo net-tools ifupdown kmod iputils-ping man wget bash completion alsa-utils apt-utils</span><br><span class="line">usbutils locales i2c-tools netplan.io vnc4server lm sensors usbmount build-essential mesa-utils cmake  can-utils sox </span><br><span class="line">v4l-utils glmark2 xubuntu-desktop </span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ apt install vim git sudo net-tools ifupdown kmod iputils-ping man wget bash completion alsa-utils apt-utils</span><br><span class="line">usbutils locales i2c-tools netplan.io vnc4server lm sensors usbmount build-essential mesa-utils cmake  can-utils sox </span><br><span class="line">v4l-utils glmark2 xubuntu-desktop </span><br></pre></td></tr></table></figure></li>
 <li><p>Add user name (here is the example how to add it. You can enter what you want)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ useradd -s &#x27;/bin/bash&#x27; -m -G adm,sudo adlink</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ useradd -s &#x27;/bin/bash&#x27; -m -G adm,sudo adlink</span><br></pre></td></tr></table></figure></li>
 <li><p>Set user’s password (here is the example how to add it. You can enter what you want)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ passwd adlink123</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ passwd adlink123</span><br></pre></td></tr></table></figure></li>
 <li><p>Set the root user’s password (here is the example how to add it. You can enter what you want)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ passwd root</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ passwd root</span><br></pre></td></tr></table></figure></li>
 <li><p>Add host name to <code>/etc/hostname</code>(here is the example how to add it. You can enter what you want)</p>
-   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ echo ‘adlink’ &gt; /etc/hostname</span><br></pre></td></tr></table></figure></li>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ echo ‘adlink’ &gt; /etc/hostname</span><br></pre></td></tr></table></figure></li>
 <li><p>Add host entry in <code>/etc/hosts</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim /etc/hosts</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo vim /etc/hosts</span><br></pre></td></tr></table></figure>
 
 <p>Add the following configuration:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1 localhost</span><br><span class="line">127.0.0.1 adlink</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">127.0.0.1 localhost</span><br><span class="line">127.0.0.1 adlink</span><br></pre></td></tr></table></figure></li>
 <li><p>After all the work is done, exit the chroot environment.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ exit</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ exit</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="Add-I-O-Drivers-to-Rootfs" class="article-heading"><a href="#Add-I-O-Drivers-to-Rootfs" class="headerlink" title="Add I/O Drivers to Rootfs"></a>Add I/O Drivers to Rootfs<a class="article-anchor" href="#Add-I-O-Drivers-to-Rootfs" aria-hidden="true"></a></h3><h4 id="Ethernet-amp-CAN-Bus" class="article-heading"><a href="#Ethernet-amp-CAN-Bus" class="headerlink" title="- Ethernet &amp; CAN Bus"></a>- Ethernet &amp; CAN Bus<a class="article-anchor" href="#Ethernet-amp-CAN-Bus" aria-hidden="true"></a></h4><ol>
 <li><p>Create a directory to copy the Ethernet and CAN kernel modules</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mkdir $HOME/temp/home/adlink/rockchip_test</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo mkdir $HOME/temp/home/adlink/rockchip_test</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Please click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/Images/Ubuntu/UbuntuNecessaryFiles/Ubuntu-kernel-module_2020-02-24.zip">here</a> to download and copy  <strong>smsc9500.ko,  smscusbnet.ko and mcp25xxfd.ko kernel modules</strong> into rockchip_test folder from host PC. </p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp &lt;your_path&gt;/*.ko $HOME/temp/home/adlink/rockchip_test/</span><br></pre></td></tr></table></figure></li>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp &lt;your_path&gt;/*.ko $HOME/temp/home/adlink/rockchip_test/</span><br></pre></td></tr></table></figure></li>
 <li><p>Use Netplan to enables easily configuring networking on system. Please create a <code>01-network-manager-all.yaml</code> file under /etc/netplan</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim $HOME/temp/etc/netplan/01-network-manager-all.yaml</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo vim $HOME/temp/etc/netplan/01-network-manager-all.yaml</span><br></pre></td></tr></table></figure>
 
 <p> Add the following content, then save it.</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Let NetworkManager manage all devices on this system </span><br><span class="line">network:</span><br><span class="line">  version: 2</span><br><span class="line">  renderer: NetworkManager</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Let NetworkManager manage all devices on this system </span><br><span class="line">network:</span><br><span class="line">  version: 2</span><br><span class="line">  renderer: NetworkManager</span><br></pre></td></tr></table></figure>
 <p> <strong>Note:</strong> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://wiki.ubuntu.com/Netplan">Netplan</a> enables easily configuring networking on a system via YAML files. Netplan processes the YAML and generates the required configurations for either NetworkManager or systemd-network the system’s renderer. </p>
 </li>
 </ol>
 <h4 id="Audio" class="article-heading"><a href="#Audio" class="headerlink" title="- Audio"></a>- Audio<a class="article-anchor" href="#Audio" aria-hidden="true"></a></h4><ol>
 <li><p>Please click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/Images/Ubuntu/UbuntuNecessaryFiles/asound.zip">here</a> to download <strong>asound.state</strong> file and copy to <code>/var/lib/alsa/</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp asound.state $HOME/temp/var/lib/alsa/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp asound.state $HOME/temp/var/lib/alsa/</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="Enable-I-O-Interfaces" class="article-heading"><a href="#Enable-I-O-Interfaces" class="headerlink" title="- Enable I/O Interfaces"></a>- Enable I/O Interfaces<a class="article-anchor" href="#Enable-I-O-Interfaces" aria-hidden="true"></a></h4><ol>
 <li><p>Please click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/Images/Ubuntu/UbuntuNecessaryFiles/Load.zip">here</a> to download and copy <strong>Load.sh</strong> file to the <code>rockchip_test</code>folder. </p>
 <p><strong>Note</strong>: it is shell script to insert modules on every reboot </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp Load.sh $HOME/temp/home/adlink/rockchip_test/Load.sh</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp Load.sh $HOME/temp/home/adlink/rockchip_test/Load.sh</span><br></pre></td></tr></table></figure></li>
 <li><p>Give execute permissions to script</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chmod +x $HOME/temp/home/adlink/rockchip_test/Load.sh</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo chmod +x $HOME/temp/home/adlink/rockchip_test/Load.sh</span><br></pre></td></tr></table></figure></li>
 <li><p>Please click <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/Images/Ubuntu/UbuntuNecessaryFiles/rc.zip">here</a> to download and copy <strong>rc.local</strong> to <code>temp/etc/</code> </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp rc.local $HOME/temp/etc/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp rc.local $HOME/temp/etc/</span><br></pre></td></tr></table></figure></li>
 <li><p>Give executable permissions.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chmod +x $HOME/temp/etc/rc.local</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo chmod +x $HOME/temp/etc/rc.local</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="Adding-MRAA" class="article-heading"><a href="#Adding-MRAA" class="headerlink" title="- Adding MRAA"></a>- Adding MRAA<a class="article-anchor" href="#Adding-MRAA" aria-hidden="true"></a></h4><ol>
 <li><p>Download the <code>adlink-mraa-master.tar</code> file from <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/Images/Ubuntu/UbuntuNecessaryFiles/adlink-mraa-master.tar">here</a> and extract and copy the binaries, applications and libraries to respective folders:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir $HOME/mraa</span><br><span class="line">$ tar -xvf adlink-mraa-master.tar -C $HOME/mraa/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/bin/* $HOME/temp/usr/bin/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/include/* $HOME/temp/usr/include/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/lib/libmraa.so* $HOME/temp/usr/lib/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/lib/pkgconfig/mraa.pc $HOME/temp/usr/lib/pkgconfig/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/share/* $HOME/temp/usr/share/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir $HOME/mraa</span><br><span class="line">$ tar -xvf adlink-mraa-master.tar -C $HOME/mraa/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/bin/* $HOME/temp/usr/bin/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/include/* $HOME/temp/usr/include/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/lib/libmraa.so* $HOME/temp/usr/lib/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/lib/pkgconfig/mraa.pc $HOME/temp/usr/lib/pkgconfig/</span><br><span class="line">$ sudo cp -r $HOME/mraa/usr/share/* $HOME/temp/usr/share/</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="Make-the-Root-File-System" class="article-heading"><a href="#Make-the-Root-File-System" class="headerlink" title="Make the Root File System"></a>Make the Root File System<a class="article-anchor" href="#Make-the-Root-File-System" aria-hidden="true"></a></h3><p>Execute the commands below to make the rootfs.img. Notice that you need change the “count” value according to the size of the “temp” folder.</p>
 <p>Below command will create new rootfs.img file of size 7.4 GB (6.9 GB)</p>
@@ -259,10 +254,10 @@ $ e2fsck -p -f rootfs.img
 <h2 id="Step-2-Generating-Buildroot-SD-card-Image" class="article-heading"><a href="#Step-2-Generating-Buildroot-SD-card-Image" class="headerlink" title="Step 2: Generating Buildroot SD card Image"></a>Step 2: <strong>Generating Buildroot SD card Image</strong><a class="article-anchor" href="#Step-2-Generating-Buildroot-SD-card-Image" aria-hidden="true"></a></h2><p>Download <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/public/SMARC/LEC-PX30/SDK/px30_buildroot_es2_sdk_20200422.tar.gz">LEC-PX30 Buildroot SDK</a> and extract it.</p>
 <p><strong>Note</strong>: Use <code>iPIsmarc-es2</code> branch and root for Creating Custom Images for SD Card Creating Custom Images for SD Card Building. Use <code>git branch</code> command under <strong>px30_buildroot/kernel</strong> to check the branch version.</p>
 <p>Change directory to px30_buildroot.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> px30_buildroot</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> px30_buildroot</span></span><br></pre></td></tr></table></figure>
 
 <p>Run build script.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo ./build.sh</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo ./build.sh</span></span><br></pre></td></tr></table></figure>
 
 <p>After you run “./build.sh”, a menuconfig screen will appear as shown below. Select <strong>“Exit”</strong> as shown below.</p>
 <p><img src="HowToBuildUbuntu.assets/image-20200309102707320.png" alt="image-20200309102707320"></p>
@@ -285,12 +280,12 @@ $ e2fsck -p -f rootfs.img
 <h2 id="Step-4-Replacing-Buildroot-Rootfs-with-Ubuntu’s-one" class="article-heading"><a href="#Step-4-Replacing-Buildroot-Rootfs-with-Ubuntu’s-one" class="headerlink" title="Step 4: Replacing Buildroot Rootfs with Ubuntu’s one"></a>Step 4: Replacing Buildroot Rootfs with Ubuntu’s one<a class="article-anchor" href="#Step-4-Replacing-Buildroot-Rootfs-with-Ubuntu’s-one" aria-hidden="true"></a></h2><p>After finish step 3, get your SD card to connect to the development Linux Host PC .</p>
 <ol>
 <li><p>Unmount the mounted partitions</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo umount /dev/sdc*</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo umount /dev/sdc*</span><br></pre></td></tr></table></figure>
 
 <p><strong>Note:</strong> In our case, `/dev/sdc is SD card device name</p>
 </li>
 <li><p>Run <strong>GParted</strong> by using command line</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo gparted</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo gparted</span><br></pre></td></tr></table></figure>
 
 <p><strong>Note</strong>: GParted is a free partition editor for graphically managing your disk partitions. Please check <a target="_blank" rel="noopener external nofollow noreferrer" href="https://gparted.org/index.php">this link</a>.  </p>
 </li>
@@ -332,14 +327,14 @@ $ e2fsck -p -f rootfs.img
 </ol>
 <ol start="12">
 <li><p>Remove the existing contents as this file system is the default build root file system.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo rm -rf &lt;mount_path&gt;/*</span><br><span class="line">$ sync</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo rm -rf &lt;mount_path&gt;/*</span><br><span class="line">$ sync</span><br></pre></td></tr></table></figure>
 
 <p>For example, the required partition is <strong>sdc8</strong> here with path <strong>/media/nhcpc20011/ac09cb0f-0d9b-4441-902c-bf48b1f10127/</strong></p>
 </li>
 <li><p>Create a temporary directory and mount the <strong>rootfs.img</strong>, which is prepared at <strong>Step 1: Preparing Ubuntu Root File System</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir $HOME/sd_temp</span><br><span class="line">$ sudo mount rootfs.img $HOME/sd_temp</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir $HOME/sd_temp</span><br><span class="line">$ sudo mount rootfs.img $HOME/sd_temp</span><br></pre></td></tr></table></figure></li>
 <li><p>Run the following commands to copy the contents of the ubuntu rootfs.img to the SD card.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp -rfp $HOME/sd_temp/* &lt;mount_path&gt;/</span><br><span class="line">$ sync</span><br><span class="line">$ sudo umount $HOME/sd_temp</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo cp -rfp $HOME/sd_temp/* &lt;mount_path&gt;/</span><br><span class="line">$ sync</span><br><span class="line">$ sudo umount $HOME/sd_temp</span><br></pre></td></tr></table></figure>
 
 <p>Eject the SD card. You can directly insert SD card and power on the system to boot using the SD card.</p>
 </li>

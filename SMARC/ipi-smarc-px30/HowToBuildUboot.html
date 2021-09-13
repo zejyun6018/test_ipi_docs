@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="icon" href="https://xfii.b-cdn.net/uploads/i-pi-smarc/5ieu2go.jpg">
-  <title>Khadas Documentation</title>
+  <title>ADLINK Industrial Pi Wiki</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
   <link rel="canonical" href="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUboot.html">
   <!-- Alternative links -->
   
-    
-      <link rel="alternative" hreflang="en" href="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUboot.html">
-    
-      <link rel="alternative" hreflang="zh-cn" href="https://docs.ipi.wiki/zh-cn/ipi-smarc-px30/HowToBuildUboot.html">
     
   
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -64,20 +60,19 @@
   <link rel="stylesheet" href="/SMARC//css/font/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
-  <link rel="alternate" href="/SMARC/atom.xml" title="Khadas Documentation" type="application/atom+xml">
+  <link rel="alternate" href="/SMARC/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
   <!-- Open Graph -->
   <meta name="description" content="How to Build and Install custom U-bootBuilding U-boot on I-Pi SMARC using the LEC-PX30 SMARC module and downloading to the SDcard Prerequisites Development host running recent Ubuntu OS such as 18.0">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Khadas Documentation">
-<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUboot">
-<meta property="og:site_name" content="Khadas Documentation">
+<meta property="og:title" content="ADLINK Industrial Pi Wiki">
+<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/HowToBuildUboot.html">
+<meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
 <meta property="og:description" content="How to Build and Install custom U-bootBuilding U-boot on I-Pi SMARC using the LEC-PX30 SMARC module and downloading to the SDcard Prerequisites Development host running recent Ubuntu OS such as 18.0">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-13T07:34:39.280Z">
 <meta property="article:modified_time" content="2021-09-13T07:34:39.280Z">
-<meta property="article:author" content="Khadas">
+<meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="khadas_official">
   <!-- Google Analytics -->
   
 <script>
@@ -86,7 +81,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-110196417-1', 'auto');
+  ga('create', 'UA-161199547-2', 'auto');
   ga('send', 'pageview');
 </script>
 
@@ -138,7 +133,7 @@
 <li><p>Development host running recent Ubuntu OS such as 18.04 with compile installed  </p>
 </li>
 <li><p>Make sure it has the development environment installed :</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install build-essential</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install build-essential</span><br></pre></td></tr></table></figure></li>
 <li><p>Download the PX30 buildroot SDK  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/LEC-PX30/SDK/px30_buildroot_es2_sdk_20191218.tar.gz">here</a>  to the development host (around) 8GB)</p>
 </li>
 </ul>
@@ -146,11 +141,11 @@
 <li><p>After downloading the SDK, extract it</p>
 </li>
 <li><p>Make sure you are in terminal mode and change directory to the u-boot directory</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd px30_buildroot/u-boot</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd px30_buildroot/u-boot</span><br></pre></td></tr></table></figure></li>
 <li><p>The SDK comes standard with buildroot optimized config file for the module in question<br>If any changes are needed such as modifying the kernel type or location you can make those in the RK_UBOOT_DEFCONFIG section in px30_buildroot/u-boot/device/rockchip/.BoardConfig.mk </p>
 </li>
 <li><p>Build U-Boot using below command: </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ./make.sh evb-px30</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sudo ./make.sh evb-px30</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="Installing-U-boot-on-the-target" class="article-heading"><a href="#Installing-U-boot-on-the-target" class="headerlink" title="Installing U-boot on the target"></a>Installing U-boot on the target<a class="article-anchor" href="#Installing-U-boot-on-the-target" aria-hidden="true"></a></h2><ol>
 <li><p>After a successful build you will end up with 3 binary images: </p>
@@ -161,7 +156,7 @@
 <li> <strong>trust.img</strong>: ARM Trusted Firmware, Please flash this binary to trust partition</li>
 <li> <strong>uboot.img</strong>: The U-Boot image, Please flash this binary to uboot partition</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">u-boot/</span><br><span class="line">├── px30_loader_v1.11.115.bin</span><br><span class="line">├── trust.img</span><br><span class="line">└── uboot.img</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">u-boot/</span><br><span class="line">├── px30_loader_v1.11.115.bin</span><br><span class="line">├── trust.img</span><br><span class="line">└── uboot.img</span><br></pre></td></tr></table></figure></li>
 </ol>
 </div>
 

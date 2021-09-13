@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="icon" href="https://xfii.b-cdn.net/uploads/i-pi-smarc/5ieu2go.jpg">
-  <title>Tutorial 9 - How to Setting up a Kiosk mode | Khadas Documentation</title>
+  <title>Tutorial 9 - How to Setting up a Kiosk mode | ADLINK Industrial Pi Wiki</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
   <link rel="canonical" href="https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode.html">
   <!-- Alternative links -->
   
-    
-      <link rel="alternative" hreflang="en" href="https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode.html">
-    
-      <link rel="alternative" hreflang="zh-cn" href="https://docs.ipi.wiki/zh-cn/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode.html">
     
   
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -64,20 +60,19 @@
   <link rel="stylesheet" href="/SMARC//css/font/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
-  <link rel="alternate" href="/SMARC/atom.xml" title="Khadas Documentation" type="application/atom+xml">
+  <link rel="alternate" href="/SMARC/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
   <!-- Open Graph -->
   <meta name="description" content="Kiosk modeWhat is kiosk mode? In general, kiosk mode is meant the same as a specific mode that most of the browsers offer. It is the mode, which enables to run the application without any user i">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tutorial 9 - How to Setting up a Kiosk mode">
-<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode">
-<meta property="og:site_name" content="Khadas Documentation">
+<meta property="og:url" content="https://docs.ipi.wiki/ipi-smarc-px30/examples&howto/Tutorial9-SettingUpKioskMode.html">
+<meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
 <meta property="og:description" content="Kiosk modeWhat is kiosk mode? In general, kiosk mode is meant the same as a specific mode that most of the browsers offer. It is the mode, which enables to run the application without any user i">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-13T07:34:39.398Z">
 <meta property="article:modified_time" content="2021-09-13T07:34:39.398Z">
-<meta property="article:author" content="Khadas">
+<meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="khadas_official">
   <!-- Google Analytics -->
   
 <script>
@@ -86,7 +81,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-110196417-1', 'auto');
+  ga('create', 'UA-161199547-2', 'auto');
   ga('send', 'pageview');
 </script>
 
@@ -167,17 +162,17 @@
 <li><p><a href="../YoctoImages.html#Binary-Image-download-Link">The download link</a> for <strong>the latest Yocto binary images</strong> which built by ADLINK if you need.</p>
 </li>
 <li><p>Use this command to update and upgrade the terminal packages on Debian/Ubuntu images</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get upgrade</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get upgrade</span><br></pre></td></tr></table></figure></li>
 <li><p>Check if you installed chromium or chromium browser</p>
 </li>
 <li><p>If you are using touch screen monitor/TV, and you want to disable the cursor in your kiosk mode, install the unclutter package.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install xdotool unclutter sed</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install xdotool unclutter sed</span><br></pre></td></tr></table></figure></li>
 <li><p>Now lets proceed setting up the kiosk mode in auto-login mode, so it automatically boots into kiosk mode.</p>
 </li>
 <li><p>The efficient way to start the kiosk from auto-login is AutoStart system which is included with  LXDE, the graphical desktop environment in I-Pi.</p>
 </li>
 <li><p>AutoStart runs a script located at /home/root/.config/xsession/LXDE/autostart, so make this changes in script </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Xorg:<span class="number">0</span> &amp;</span></span><br><span class="line"><span class="meta">@export DISPLAY=<span class="number">0</span></span></span><br><span class="line"><span class="meta">@Xset s off</span></span><br><span class="line"><span class="meta">@Xset -dpms</span></span><br><span class="line"><span class="meta">@Xset s noblank</span></span><br><span class="line"><span class="meta">@chromium --no-sanbox --kiosk &lt;desired URL path&gt;</span></span><br><span class="line"><span class="meta">@lxpanel --profile LXDE</span></span><br><span class="line"><span class="meta">@pcmanfm --desktop --profile LXDE</span></span><br><span class="line"><span class="meta">@screensaver -no-splash //to disable the screensaver//</span></span><br><span class="line"><span class="meta">@unclutter -idle <span class="number">0.1</span> -root  &amp; //to disable the cursor//</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Xorg:<span class="number">0</span> &amp;</span></span><br><span class="line"><span class="meta">@export DISPLAY=<span class="number">0</span></span></span><br><span class="line"><span class="meta">@Xset s off</span></span><br><span class="line"><span class="meta">@Xset -dpms</span></span><br><span class="line"><span class="meta">@Xset s noblank</span></span><br><span class="line"><span class="meta">@chromium --no-sanbox --kiosk &lt;desired URL path&gt;</span></span><br><span class="line"><span class="meta">@lxpanel --profile LXDE</span></span><br><span class="line"><span class="meta">@pcmanfm --desktop --profile LXDE</span></span><br><span class="line"><span class="meta">@screensaver -no-splash //to disable the screensaver//</span></span><br><span class="line"><span class="meta">@unclutter -idle <span class="number">0.1</span> -root  &amp; //to disable the cursor//</span></span><br></pre></td></tr></table></figure></li>
 <li><p>Save the script and reboot the I-Pi to AutoStart the kiosk mode.</p>
 </li>
 <li><p>You can change the URL path in the script to change the kiosk mode </p>
