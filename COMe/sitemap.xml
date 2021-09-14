@@ -2,21 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/CarrierIntroduction.html</loc>
-    
-    <lastmod>2021-09-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/index.html</loc>
-    
-    <lastmod>2021-09-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/404/index.html</loc>
+    <loc>https://docs.ipi.wiki/ava/operation.html</loc>
     
     <lastmod>2021-09-14</lastmod>
     
@@ -30,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/HowtoUseBMCSerialConsole.html</loc>
+    <loc>https://docs.ipi.wiki/ava/introduction.html</loc>
     
     <lastmod>2021-09-14</lastmod>
     
@@ -38,13 +24,6 @@
   
   <url>
     <loc>https://docs.ipi.wiki/ava/edk2-firmware-update.html</loc>
-    
-    <lastmod>2021-09-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/ava/introduction.html</loc>
     
     <lastmod>2021-09-14</lastmod>
     
@@ -79,6 +58,13 @@
   </url>
   
   <url>
+    <loc>https://docs.ipi.wiki/ava/ModuleIntroduction.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://docs.ipi.wiki/ava/IntroductionCOMHPC.html</loc>
     
     <lastmod>2021-09-14</lastmod>
@@ -86,7 +72,7 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/ModuleIntroduction.html</loc>
+    <loc>https://docs.ipi.wiki/ava/HowToUseBMCSerialConsole.html</loc>
     
     <lastmod>2021-09-14</lastmod>
     
@@ -107,7 +93,21 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/HowtoChangeBMCIPaddress.html</loc>
+    <loc>https://docs.ipi.wiki/ava/FAQ.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ava/HowToBuildYoctoEWAOL.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ava/HowToChangeBMCIPaddress.html</loc>
     
     <lastmod>2021-09-14</lastmod>
     
@@ -121,44 +121,58 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/operation.html</loc>
+    <loc>https://docs.ipi.wiki/ava/CarrierIntroduction.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
   <url>
     <loc>https://docs.ipi.wiki/ava/PowerCableConnection.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/HowtoUseSerialConsole.html</loc>
+    <loc>https://docs.ipi.wiki/ava/HowToUseSerialConsole.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
   <url>
     <loc>https://docs.ipi.wiki/ava/HowToCheckPowerReadingByIMPI.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/HowToBuildYoctoEWAOL.html</loc>
+    <loc>https://docs.ipi.wiki/ava/ChassisandCooling.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/FAQ.html</loc>
+    <loc>https://docs.ipi.wiki/ava/COMHPC_BuildInstructions.html</loc>
     
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-09-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/index.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/404/index.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
