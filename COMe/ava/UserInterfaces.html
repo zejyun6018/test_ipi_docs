@@ -73,13 +73,12 @@
 <meta property="og:image" content="https://docs.ipi.wiki/ava/introduction.assets/image-20210820111800694.png">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/pcieslots.PNG">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/Rearview.png">
-<meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/image-20210808165218496.png">
-<meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/image-20210808165301005.png">
-<meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/image-20210820124355271.png">
-<meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/productGallery174.png">
+<meta property="og:image" content="https://docs.ipi.wiki/ava/introduction.assets/image-20210820123103468.png">
+<meta property="og:image" content="https://docs.ipi.wiki/ava/introduction.assets/41ysMkpiRoL._AC_.jpg">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/led.png">
-<meta property="article:published_time" content="2021-09-14T16:51:49.463Z">
-<meta property="article:modified_time" content="2021-09-14T16:51:49.463Z">
+<meta property="og:image" content="https://docs.ipi.wiki/ava/operation.assets/image-20210826131924621.png">
+<meta property="article:published_time" content="2021-09-14T17:25:48.197Z">
+<meta property="article:modified_time" content="2021-09-14T16:46:42.325Z">
 <meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://docs.ipi.wiki/ava/introduction.assets/image-20210820140603168.png">
@@ -142,71 +141,139 @@
 <li>COM HPC module with 32-core ARM based Ampere Altra SOC</li>
 <li>COM HPC Server carrier</li>
 <li>Intel Quad X710 10GbE Lan Card</li>
-<li>USB 3.0 Card for Front panel</li>
+<li>USB 2.0 Card for Front panel</li>
 <li>32 GB DDR4 System Memory</li>
 <li>128 GB NVMe M.2 storage </li>
-<li>Tower Enclosure</li>
-<li>Liquid cooling assembly</li>
 <li>750 Watt Power Supply</li>
 </ul>
-<h3 id="PCIe-Slots-on-Carrier-board" class="article-heading"><a href="#PCIe-Slots-on-Carrier-board" class="headerlink" title="PCIe Slots on Carrier board"></a>PCIe Slots on Carrier board<a class="article-anchor" href="#PCIe-Slots-on-Carrier-board" aria-hidden="true"></a></h3><p>COM HPC Server carrier is a general purpose carrier for generic COM HPC server type modules typically used for prototyping purposes. </p>
+<h2 id="PCIe-Slots-on-Carrier-board" class="article-heading"><a href="#PCIe-Slots-on-Carrier-board" class="headerlink" title="PCIe Slots on Carrier board"></a>PCIe Slots on Carrier board<a class="article-anchor" href="#PCIe-Slots-on-Carrier-board" aria-hidden="true"></a></h2><p>COM HPC Server carrier is a general purpose carrier for generic COM HPC server type modules typically used for prototyping purposes. </p>
 <p>The carrier an EATX size and can be mounted into standard EATX capable tower enclosures.</p>
 <p>It is powered by off the shelve ATX type power supplies </p>
 <p><img src="UserInterfaces.assets/pcieslots.PNG" alt="pcieslots"></p>
-<h3 id="Rear-View-I-O" class="article-heading"><a href="#Rear-View-I-O" class="headerlink" title="Rear View I/O"></a>Rear View I/O<a class="article-anchor" href="#Rear-View-I-O" aria-hidden="true"></a></h3><p><img src="UserInterfaces.assets/Rearview.png" alt="Rearview"></p>
-<h3 id="Summary-of-Interfaces" class="article-heading"><a href="#Summary-of-Interfaces" class="headerlink" title="Summary of Interfaces"></a>Summary of Interfaces<a class="article-anchor" href="#Summary-of-Interfaces" aria-hidden="true"></a></h3><table>
+<h2 id="I2C-SMBus-Information" class="article-heading"><a href="#I2C-SMBus-Information" class="headerlink" title="I2C/SMBus Information"></a>I2C/SMBus Information<a class="article-anchor" href="#I2C-SMBus-Information" aria-hidden="true"></a></h2><table>
 <thead>
 <tr>
-<th>PCIe slots</th>
+<th align="left">Pin number</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Pin 1</td>
+<td align="left">3.3 VSB</td>
+</tr>
+<tr>
+<td align="left">Pin 2</td>
+<td align="left">3.3V</td>
+</tr>
+<tr>
+<td align="left">Pin 3</td>
+<td align="left">SMB_CLK</td>
+</tr>
+<tr>
+<td align="left">Pin 4</td>
+<td align="left">I2C0_CLK</td>
+</tr>
+<tr>
+<td align="left">Pin 5</td>
+<td align="left">SMB_DAT</td>
+</tr>
+<tr>
+<td align="left">Pin 6</td>
+<td align="left">I2C0_DAT</td>
+</tr>
+<tr>
+<td align="left">Pin 7</td>
+<td align="left">1.8V</td>
+</tr>
+<tr>
+<td align="left">Pin 8</td>
+<td align="left">I2C0_ALERT#</td>
+</tr>
+<tr>
+<td align="left">Pin 9</td>
+<td align="left">I2C1_CLK</td>
+</tr>
+<tr>
+<td align="left">Pin 10</td>
+<td align="left">GND</td>
+</tr>
+<tr>
+<td align="left">Pin 11</td>
+<td align="left">I2C1_DAT</td>
+</tr>
+<tr>
+<td align="left">Pin 12</td>
+<td align="left">GND</td>
+</tr>
+</tbody></table>
+<p><strong>Note:</strong> 3.3VSB and 3.3V for SMB and I2C0. 1.8V for I2C1</p>
+<h2 id="Rear-View-I-O" class="article-heading"><a href="#Rear-View-I-O" class="headerlink" title="Rear View I/O"></a>Rear View I/O<a class="article-anchor" href="#Rear-View-I-O" aria-hidden="true"></a></h2><p><img src="UserInterfaces.assets/Rearview.png" alt="Rearview"></p>
+<h2 id="Summary-of-Interfaces" class="article-heading"><a href="#Summary-of-Interfaces" class="headerlink" title="Summary of Interfaces"></a>Summary of Interfaces<a class="article-anchor" href="#Summary-of-Interfaces" aria-hidden="true"></a></h2><table>
+<thead>
+<tr>
+<th align="center">PCIe slots</th>
 <th>Rear I/O</th>
+<th>Front I/O</th>
 <th>Aux Headers</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>PCIe x16 GEN4  two slots</td>
-<td>4x USB 3.0 on rear I/O</td>
-<td>RS232</td>
+<td align="center">PCIe x16 GEN4  two slots</td>
+<td>4x USB 3.0 + 2x USB 3.0</td>
+<td>2x USB 3.0</td>
+<td>*RS232</td>
 </tr>
 <tr>
-<td>PCIe x8 GEN4 one slot</td>
-<td>LAN GbE on rear I/O</td>
+<td align="center">PCIe x8 GEN4 one slot</td>
+<td>LAN GbE</td>
+<td></td>
 <td>5x FAN power</td>
 </tr>
 <tr>
-<td>PCIe x4 GEN4 two slots</td>
-<td>LAN GbE on rear I/O for BMC management</td>
+<td align="center">PCIe x4 GEN4 two slots</td>
+<td>LAN GbE (BMC management)</td>
+<td></td>
 <td>Front panel signals</td>
 </tr>
 <tr>
-<td>M.2 PCIe x4 GEN4 two slots</td>
-<td>Analog VGA on rear I/O</td>
-<td>SPI, GPIO, I2C</td>
+<td align="center">M.2 M key GEN4 two slots</td>
+<td>Analog VGA</td>
+<td></td>
+<td>*SPI, *GPIO, I2C</td>
 </tr>
 <tr>
+<td align="center"></td>
+<td>RS232 DB9</td>
 <td></td>
-<td>RS232 DB9 on rear I/O</td>
 <td>2x SATA (not active)</td>
 </tr>
+<tr>
+<td align="center"></td>
+<td>Quad 10GBASE-T LAN</td>
+<td></td>
+<td></td>
+</tr>
 </tbody></table>
-<h3 id="Tower-Enclosure" class="article-heading"><a href="#Tower-Enclosure" class="headerlink" title="Tower Enclosure"></a>Tower Enclosure<a class="article-anchor" href="#Tower-Enclosure" aria-hidden="true"></a></h3><p><img src="UserInterfaces.assets/image-20210808165218496.png" alt="image-20210808165218496"></p>
-<p><img src="UserInterfaces.assets/image-20210808165301005.png" alt="image-20210808165301005"></p>
-<h3 id="Liquid-Cooling-Assembly" class="article-heading"><a href="#Liquid-Cooling-Assembly" class="headerlink" title="Liquid Cooling Assembly"></a>Liquid Cooling Assembly<a class="article-anchor" href="#Liquid-Cooling-Assembly" aria-hidden="true"></a></h3><p><img src="UserInterfaces.assets/image-20210820124355271.png" alt="image-20210820124355271"></p>
-<p>● Asetek  based all-in-one closed loop, maintenance free liquid cooling solution for Ampere Altra SOC</p>
-<p>● All aluminum radiator with 11 water channels to disperse water and heat</p>
-<p>● Thermally optimized cooling plate and low-noise pump design for high performance, quiet cooling</p>
-<p>● Two 120 mm Vento ARGB fans</p>
-<h3 id="ATX-Power-Supply" class="article-heading"><a href="#ATX-Power-Supply" class="headerlink" title="ATX Power Supply"></a>ATX Power Supply<a class="article-anchor" href="#ATX-Power-Supply" aria-hidden="true"></a></h3><p><img src="UserInterfaces.assets/productGallery174.png" alt="productGallery174"></p>
-<p>● 80 Plus Gold Certified </p>
-<p>● ATX Version : ATX 12V V2.52 </p>
-<p>● Protection : OCP / OVP / UVP / OPP / SCP / OTP / NLO / SIP</p>
-<p>● Certifications : CE / UKCA / CB / FCC (IC) / EAC / CCC / TUV / cTUVus / RCM / NOM / BSMI / KC</p>
-<p>● PFC : 0.99</p>
-<p>● Input Voltage : 100-240V</p>
-<p>● Input Frequency : 47Hz-63Hz</p>
-<p>● Noise Level @ 20% : 11.2dB(A), Noise Level @ 50% : 750W : 11.3dB(A), Noise Level @ 100% :  750W : 22.7dB(A)</p>
-<p>● EPS 8 (4+4) Pin Connector  : 750 Watt</p>
-<h3 id="Led-Behavior" class="article-heading"><a href="#Led-Behavior" class="headerlink" title="Led Behavior"></a>Led Behavior<a class="article-anchor" href="#Led-Behavior" aria-hidden="true"></a></h3><p><img src="UserInterfaces.assets/led.png" alt="led"></p>
-<h4 id="Color-of-the-LED’s" class="article-heading"><a href="#Color-of-the-LED’s" class="headerlink" title="Color of the LED’s"></a>Color of the LED’s<a class="article-anchor" href="#Color-of-the-LED’s" aria-hidden="true"></a></h4><table>
+<p><strong>Note</strong>: *Please wait for further releases</p>
+<h2 id="Quad-10GBASE-T-LAN-card" class="article-heading"><a href="#Quad-10GBASE-T-LAN-card" class="headerlink" title="Quad 10GBASE-T LAN card"></a>Quad 10GBASE-T LAN card<a class="article-anchor" href="#Quad-10GBASE-T-LAN-card" aria-hidden="true"></a></h2><p><img src="introduction.assets/image-20210820123103468.png" alt="PCIe Quad 10GbE "></p>
+<ul>
+<li>Intel Ethernet Controller XL710</li>
+<li>4x 10GBase-T RJ45 Standard</li>
+<li>Intel Ethernet Controller XL710</li>
+<li>Cat6a Cabling with RJ45 Connectors up to 100 meters</li>
+<li>Auto-negotiation between 100Mb/s, 1GbE and 10GbE PCIe 3.0 x8</li>
+</ul>
+<h2 id="USB-3-0-Card-for-Front-panel" class="article-heading"><a href="#USB-3-0-Card-for-Front-panel" class="headerlink" title="USB 3.0 Card for Front panel"></a>USB 3.0 Card for Front panel<a class="article-anchor" href="#USB-3-0-Card-for-Front-panel" aria-hidden="true"></a></h2><p><img src="introduction.assets/41ysMkpiRoL._AC_.jpg" alt="usb 3.0 CARD"></p>
+<ul>
+<li>NEC / Renesas D720201 chipset card</li>
+<li>supporting 4 USB 3.0 connection totally<ul>
+<li>2x back USB 3.0 ports</li>
+<li>1x 20-pin USB 3.0 header  supporting up to 2 USB 3.0 on front pane</li>
+</ul>
+</li>
+</ul>
+<h2 id="LED-Behavior" class="article-heading"><a href="#LED-Behavior" class="headerlink" title="LED Behavior"></a>LED Behavior<a class="article-anchor" href="#LED-Behavior" aria-hidden="true"></a></h2><p><img src="UserInterfaces.assets/led.png" alt="led"></p>
+<h3 id="Color-of-the-LED’s" class="article-heading"><a href="#Color-of-the-LED’s" class="headerlink" title="Color of the LED’s"></a>Color of the LED’s<a class="article-anchor" href="#Color-of-the-LED’s" aria-hidden="true"></a></h3><table>
 <thead>
 <tr>
 <th>Color</th>
@@ -214,27 +281,27 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>5VSB:Green</td>
+<td>5VSB(Green)</td>
 <td>5VSB of power supply is ready</td>
 </tr>
 <tr>
-<td>S3:Blue</td>
+<td>S3(Blue)</td>
 <td>System is not in S0 mode</td>
 </tr>
 <tr>
-<td>PWR_ON: Green</td>
+<td>PWR_ON(Green)</td>
 <td>System is in S0 mode</td>
 </tr>
 <tr>
-<td>WDT:Red</td>
+<td>WDT(Red)</td>
 <td>If something is wrong, WDT will trigger</td>
 </tr>
 <tr>
-<td>BMC_HB:Orange</td>
+<td>BMC_HB(Orange)</td>
 <td>Situation of Carrier BMC, If it’s normal, this LED will flash</td>
 </tr>
 </tbody></table>
-<h4 id="State-of-LED’s" class="article-heading"><a href="#State-of-LED’s" class="headerlink" title="State of LED’s"></a>State of LED’s<a class="article-anchor" href="#State-of-LED’s" aria-hidden="true"></a></h4><table>
+<h3 id="State-of-LED’s" class="article-heading"><a href="#State-of-LED’s" class="headerlink" title="State of LED’s"></a>State of LED’s<a class="article-anchor" href="#State-of-LED’s" aria-hidden="true"></a></h3><table>
 <thead>
 <tr>
 <th>State</th>
@@ -259,10 +326,26 @@
 <td>Flash</td>
 </tr>
 </tbody></table>
+<h2 id="LED-Button" class="article-heading"><a href="#LED-Button" class="headerlink" title="LED Button"></a>LED Button<a class="article-anchor" href="#LED-Button" aria-hidden="true"></a></h2><ul>
+<li>For your entertainment during coding you can switch on the color mode of the 5 ARGB system fans in the enclosure. </li>
+<li>There are 12 color preset modes and an off mode.  Pressing this button cycles you through the preset modes. </li>
+</ul>
+<p> <img src="operation.assets/image-20210826131924621.png" alt="image-20210826131924621"> </p>
+<h2 id="Power-Button" class="article-heading"><a href="#Power-Button" class="headerlink" title="Power Button"></a>Power Button<a class="article-anchor" href="#Power-Button" aria-hidden="true"></a></h2><p>Systems are configured for ATX mode operation.  See <strong>“Power up/down and ACPI behavior”</strong> below for particularities booting  up and shutting down</p>
+<h2 id="Power-up-down-and-ACPI-behavior" class="article-heading"><a href="#Power-up-down-and-ACPI-behavior" class="headerlink" title="Power up/down and ACPI behavior"></a>Power up/down and ACPI behavior<a class="article-anchor" href="#Power-up-down-and-ACPI-behavior" aria-hidden="true"></a></h2><p>Switch on power input to the system on the rear side of the system. This will energize the system but will not let it boot up. </p>
+<h3 id="ATX-mode-power-on-with-power-button-on-front-panel" class="article-heading"><a href="#ATX-mode-power-on-with-power-button-on-front-panel" class="headerlink" title="ATX mode  power on with power button on front panel"></a>ATX mode  power on with power button on front panel<a class="article-anchor" href="#ATX-mode-power-on-with-power-button-on-front-panel" aria-hidden="true"></a></h3><ul>
+<li>Power button needs to be pushed for 2 seconds and than released than system will boot up</li>
+</ul>
+<h3 id="ATX-mode-power-down-with-power-button-on-front-panel" class="article-heading"><a href="#ATX-mode-power-down-with-power-button-on-front-panel" class="headerlink" title="ATX mode  power down with power button on front panel"></a>ATX mode  power down with power button on front panel<a class="article-anchor" href="#ATX-mode-power-down-with-power-button-on-front-panel" aria-hidden="true"></a></h3><ul>
+<li>Power button needs to be pushed for 2 seconds and then released. So, system will shutdown power</li>
+</ul>
+<ul>
+<li>This does not sends a signal to the OS to do an orderly OS shutdown and than OS issue a power off</li>
+</ul>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2021-09-14T16:51:49.463Z" itemprop="dateModified">Last updated: 2021-09-15</time>
+                <time class="article-footer-updated" datetime="2021-09-14T16:46:42.325Z" itemprop="dateModified">Last updated: 2021-09-15</time>
                 <a href="Unboxing.html" class="article-footer-prev" title="UnBoxing"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="ChassisandCooling.html" class="article-footer-next" title="Chassis and Cooling"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -272,7 +355,7 @@
             <div id="article-toc-inner">
               <div class="article-toc-border">
                 <strong class="sidebar-title">Contents</strong>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AVA-Developer-Platform"><span class="toc-text">AVA Developer Platform</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#System-Components"><span class="toc-text">System Components</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PCIe-Slots-on-Carrier-board"><span class="toc-text">PCIe Slots on Carrier board</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rear-View-I-O"><span class="toc-text">Rear View I&#x2F;O</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Summary-of-Interfaces"><span class="toc-text">Summary of Interfaces</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tower-Enclosure"><span class="toc-text">Tower Enclosure</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Liquid-Cooling-Assembly"><span class="toc-text">Liquid Cooling Assembly</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ATX-Power-Supply"><span class="toc-text">ATX Power Supply</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Led-Behavior"><span class="toc-text">Led Behavior</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Color-of-the-LED%E2%80%99s"><span class="toc-text">Color of the LED’s</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#State-of-LED%E2%80%99s"><span class="toc-text">State of LED’s</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AVA-Developer-Platform"><span class="toc-text">AVA Developer Platform</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#System-Components"><span class="toc-text">System Components</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCIe-Slots-on-Carrier-board"><span class="toc-text">PCIe Slots on Carrier board</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I2C-SMBus-Information"><span class="toc-text">I2C&#x2F;SMBus Information</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rear-View-I-O"><span class="toc-text">Rear View I&#x2F;O</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-of-Interfaces"><span class="toc-text">Summary of Interfaces</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quad-10GBASE-T-LAN-card"><span class="toc-text">Quad 10GBASE-T LAN card</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#USB-3-0-Card-for-Front-panel"><span class="toc-text">USB 3.0 Card for Front panel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LED-Behavior"><span class="toc-text">LED Behavior</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Color-of-the-LED%E2%80%99s"><span class="toc-text">Color of the LED’s</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#State-of-LED%E2%80%99s"><span class="toc-text">State of LED’s</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LED-Button"><span class="toc-text">LED Button</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Power-Button"><span class="toc-text">Power Button</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Power-up-down-and-ACPI-behavior"><span class="toc-text">Power up&#x2F;down and ACPI behavior</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ATX-mode-power-on-with-power-button-on-front-panel"><span class="toc-text">ATX mode  power on with power button on front panel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ATX-mode-power-down-with-power-button-on-front-panel"><span class="toc-text">ATX mode  power down with power button on front panel</span></a></li></ol></li></ol></li></ol>
                 <a href="#" id="article-toc-top">Back to Top</a>
               </div>
             </div>
