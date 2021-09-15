@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://docs.ipi.wiki/ava/UserInterfaces.html</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://docs.ipi.wiki/ava/index.html</loc>
     
     <lastmod>2021-09-15</lastmod>
@@ -31,13 +38,6 @@
   
   <url>
     <loc>https://docs.ipi.wiki/ava/edk2-firmware-update.html</loc>
-    
-    <lastmod>2021-09-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/ava/UserInterfaces.html</loc>
     
     <lastmod>2021-09-15</lastmod>
     
@@ -79,21 +79,14 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/HowToFlashMMCFW.html</loc>
-    
-    <lastmod>2021-09-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/ava/HowToSetup.html</loc>
-    
-    <lastmod>2021-09-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://docs.ipi.wiki/ava/HowToUseBMCSerialConsole.html</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ava/HowToFlashMMCFW.html</loc>
     
     <lastmod>2021-09-15</lastmod>
     
@@ -114,6 +107,13 @@
   </url>
   
   <url>
+    <loc>https://docs.ipi.wiki/ava/FAQ.html</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://docs.ipi.wiki/ava/ChassisandCooling.html</loc>
     
     <lastmod>2021-09-15</lastmod>
@@ -122,13 +122,6 @@
   
   <url>
     <loc>https://docs.ipi.wiki/ava/HowToBuildYoctoEWAOL.html</loc>
-    
-    <lastmod>2021-09-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://docs.ipi.wiki/ava/FAQ.html</loc>
     
     <lastmod>2021-09-15</lastmod>
     
@@ -145,6 +138,13 @@
     <loc>https://docs.ipi.wiki/ava/COMHPC_BuildInstructions.html</loc>
     
     <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ava/HowToSetup.html</loc>
+    
+    <lastmod>2021-09-14</lastmod>
     
   </url>
   
