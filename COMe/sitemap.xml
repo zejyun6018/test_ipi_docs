@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/CentOSInstallation.html</loc>
-    
-    <lastmod>2021-09-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://docs.ipi.wiki/ava/UbuntuInstallation.html</loc>
     
     <lastmod>2021-09-15</lastmod>
@@ -16,14 +9,21 @@
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/Unboxing.html</loc>
+    <loc>https://docs.ipi.wiki/ava/YoctoInstallation.html</loc>
     
     <lastmod>2021-09-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://docs.ipi.wiki/ava/YoctoInstallation.html</loc>
+    <loc>https://docs.ipi.wiki/ava/CentOSInstallation.html</loc>
+    
+    <lastmod>2021-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://docs.ipi.wiki/ava/Unboxing.html</loc>
     
     <lastmod>2021-09-15</lastmod>
     
