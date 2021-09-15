@@ -72,9 +72,10 @@
 <meta property="og:image" content="https://docs.ipi.wiki/ava/CarrierIntroduction.assets/image-20210820111800694.png">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/CarrierIntroduction.assets/picng.png">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/CarrierIntroduction.assets/pcieslots.PNG">
+<meta property="og:image" content="https://docs.ipi.wiki/ava/UserInterfaces.assets/led.png">
 <meta property="og:image" content="https://docs.ipi.wiki/ava/CarrierIntroduction.assets/fd.PNG">
-<meta property="article:published_time" content="2021-09-15T02:21:31.740Z">
-<meta property="article:modified_time" content="2021-09-15T02:21:31.732Z">
+<meta property="article:published_time" content="2021-09-15T04:26:02.977Z">
+<meta property="article:modified_time" content="2021-09-15T04:17:50.620Z">
 <meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://docs.ipi.wiki/ava/CarrierIntroduction.assets/image-20210820111800694.png">
@@ -133,7 +134,110 @@
               <div class="article-content" itemprop="articleBody">
                 <h1 id="AVA-Developer-Platform" class="article-heading"><a href="#AVA-Developer-Platform" class="headerlink" title="AVA Developer Platform"></a>AVA Developer Platform<a class="article-anchor" href="#AVA-Developer-Platform" aria-hidden="true"></a></h1><h2 id="COM-HPC-Server-Base" class="article-heading"><a href="#COM-HPC-Server-Base" class="headerlink" title="COM-HPC Server Base"></a>COM-HPC Server Base<a class="article-anchor" href="#COM-HPC-Server-Base" aria-hidden="true"></a></h2><h2 id class="article-heading"><a href="#" class="headerlink" title></a><img src="CarrierIntroduction.assets/image-20210820111800694.png" alt="image-20210820111800694"><a class="article-anchor" href="#" aria-hidden="true"></a></h2><p>​                                                                                                                                                                <img src="CarrierIntroduction.assets/picng.png" alt="picng"></p>
 <p><img src="CarrierIntroduction.assets/pcieslots.PNG" alt="pcieslots"></p>
+<h2 id="LED-Behavior" class="article-heading"><a href="#LED-Behavior" class="headerlink" title="LED Behavior"></a>LED Behavior<a class="article-anchor" href="#LED-Behavior" aria-hidden="true"></a></h2><p><img src="UserInterfaces.assets/led.png" alt="led"></p>
+<h3 id="Color-of-the-LED’s" class="article-heading"><a href="#Color-of-the-LED’s" class="headerlink" title="Color of the LED’s"></a>Color of the LED’s<a class="article-anchor" href="#Color-of-the-LED’s" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Indication</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5VSB(Green)</td>
+<td>5VSB of power supply is ready</td>
+</tr>
+<tr>
+<td>S3(Blue)</td>
+<td>System is not in S0 mode</td>
+</tr>
+<tr>
+<td>PWR_ON(Green)</td>
+<td>System is in S0 mode</td>
+</tr>
+<tr>
+<td>WDT(Red)</td>
+<td>If something is wrong, WDT will trigger</td>
+</tr>
+<tr>
+<td>BMC_HB(Orange)</td>
+<td>Situation of Carrier BMC, If it’s normal, this LED will flash</td>
+</tr>
+</tbody></table>
+<h3 id="State-of-LED’s" class="article-heading"><a href="#State-of-LED’s" class="headerlink" title="State of LED’s"></a>State of LED’s<a class="article-anchor" href="#State-of-LED’s" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>State</th>
+<th>5VSB LED</th>
+<th>S3 LED</th>
+<th>PWR_ON LED</th>
+<th>BMC_HB LED</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S5</td>
+<td>Green</td>
+<td>Blue</td>
+<td>OFF</td>
+<td>Flash</td>
+</tr>
+<tr>
+<td>S0</td>
+<td>Green</td>
+<td>OFF</td>
+<td>Green</td>
+<td>Flash</td>
+</tr>
+</tbody></table>
+<h2 id="Summary-of-Interfaces" class="article-heading"><a href="#Summary-of-Interfaces" class="headerlink" title="Summary of Interfaces"></a>Summary of Interfaces<a class="article-anchor" href="#Summary-of-Interfaces" aria-hidden="true"></a></h2><table>
+<thead>
+<tr>
+<th align="left">PCIe slots</th>
+<th align="left">Rear I/O</th>
+<th align="left">Front I/O</th>
+<th align="left">Aux Headers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">PCIe x16 GEN4  two slots</td>
+<td align="left">4x USB 3.0 + 2x USB 3.0</td>
+<td align="left">2x USB 3.0</td>
+<td align="left">*RS232</td>
+</tr>
+<tr>
+<td align="left">PCIe x8 GEN4 one slot</td>
+<td align="left">LAN GbE</td>
+<td align="left">Audio (not active)</td>
+<td align="left">5x FAN power</td>
+</tr>
+<tr>
+<td align="left">PCIe x4 GEN4 two slots</td>
+<td align="left">LAN GbE (BMC management)</td>
+<td align="left"></td>
+<td align="left">Front panel signals</td>
+</tr>
+<tr>
+<td align="left">M.2 M key GEN4 two slots</td>
+<td align="left">Analog VGA</td>
+<td align="left"></td>
+<td align="left">*SPI, *GPIO</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">RS232 DB9</td>
+<td align="left"></td>
+<td align="left">2x I2C, SMBus</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Quad 10GBASE-T LAN</td>
+<td align="left"></td>
+<td align="left">2x SATA (not active)</td>
+</tr>
+</tbody></table>
+<p><strong>Note</strong>: *Please wait for further releases</p>
 <h2 id="COM-HPC®-Server-Type-Reference-Carrier-Board-in-Extended-ATX-Form-Factor" class="article-heading"><a href="#COM-HPC®-Server-Type-Reference-Carrier-Board-in-Extended-ATX-Form-Factor" class="headerlink" title="COM-HPC® Server Type Reference Carrier Board in Extended-ATX Form Factor"></a>COM-HPC® Server Type Reference Carrier Board in Extended-ATX Form Factor<a class="article-anchor" href="#COM-HPC®-Server-Type-Reference-Carrier-Board-in-Extended-ATX-Form-Factor" aria-hidden="true"></a></h2><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hq0epm0west0us0storage.blob.core.windows.net/development/ampere/COM-HPC-ALT%2BAAP/COM-HPC_Server_Base-20210709.pdf">Download Datasheet</a></p>
+<div class="bullets">
+
 <h2 id="Specifications" class="article-heading"><a href="#Specifications" class="headerlink" title="Specifications"></a>Specifications<a class="article-anchor" href="#Specifications" aria-hidden="true"></a></h2><ul>
 <li><strong>Core Module Interface</strong></li>
 </ul>
@@ -219,10 +323,11 @@
 <h3 id="Functional-Diagram" class="article-heading"><a href="#Functional-Diagram" class="headerlink" title="Functional Diagram"></a>Functional Diagram<a class="article-anchor" href="#Functional-Diagram" aria-hidden="true"></a></h3><p><img src="CarrierIntroduction.assets/fd.PNG" alt="fd"></p>
 </li>
 </ul>
+</div>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2021-09-15T02:21:31.732Z" itemprop="dateModified">Last updated: 2021-09-15</time>
+                <time class="article-footer-updated" datetime="2021-09-15T04:17:50.620Z" itemprop="dateModified">Last updated: 2021-09-15</time>
                 <a href="ModuleIntroduction.html" class="article-footer-prev" title="Module Introduction"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="ChassisandCooling.html" class="article-footer-next" title="Chassis and Cooling"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -232,7 +337,7 @@
             <div id="article-toc-inner">
               <div class="article-toc-border">
                 <strong class="sidebar-title">Contents</strong>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AVA-Developer-Platform"><span class="toc-text">AVA Developer Platform</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#COM-HPC-Server-Base"><span class="toc-text">COM-HPC Server Base</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#COM-HPC%C2%AE-Server-Type-Reference-Carrier-Board-in-Extended-ATX-Form-Factor"><span class="toc-text">COM-HPC® Server Type Reference Carrier Board in Extended-ATX Form Factor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Specifications"><span class="toc-text">Specifications</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functional-Diagram"><span class="toc-text">Functional Diagram</span></a></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AVA-Developer-Platform"><span class="toc-text">AVA Developer Platform</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#COM-HPC-Server-Base"><span class="toc-text">COM-HPC Server Base</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LED-Behavior"><span class="toc-text">LED Behavior</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Color-of-the-LED%E2%80%99s"><span class="toc-text">Color of the LED’s</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#State-of-LED%E2%80%99s"><span class="toc-text">State of LED’s</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-of-Interfaces"><span class="toc-text">Summary of Interfaces</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#COM-HPC%C2%AE-Server-Type-Reference-Carrier-Board-in-Extended-ATX-Form-Factor"><span class="toc-text">COM-HPC® Server Type Reference Carrier Board in Extended-ATX Form Factor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Specifications"><span class="toc-text">Specifications</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Functional-Diagram"><span class="toc-text">Functional Diagram</span></a></li></ol></li></ol></li></ol>
                 <a href="#" id="article-toc-top">Back to Top</a>
               </div>
             </div>
